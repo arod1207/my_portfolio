@@ -33,33 +33,32 @@ function Projects() {
             <div className="h-[50px] w-[50px]">
               <JavaScriptSVG />
             </div>
-            <div className="h-[50px] w-[50px] ">
+            <div className="h-[50px] w-[50px]">
               <TailWindSVG />
             </div>
-            <div className="h-[50px] w-[50px] ">
+            <div className="h-[50px] w-[50px]">
               <ReactSVG />
             </div>
-            <div className="h-[50px] w-[50px] ">
+            <div className="h-[50px] w-[50px]">
               <ReduxSVG />
             </div>
           </div>
           <div className="my-4 flex flex-col gap-8">
-            <span className="flex gap-3">
-              <LinkSVG />{" "}
+            <div className="flex gap-3">
+              <LinkSVG />
               <a className="font-bold" href="https://purotacos.netlify.app/">
-                {" "}
-                Puro Tacos{" "}
+                Puro Tacos
               </a>
-            </span>
-            <span className="flex gap-3">
-              <GitHubSVG />{" "}
+            </div>
+            <div className="flex gap-3">
+              <GitHubSVG />
               <a
                 className="font-bold"
                 href="https://github.com/arod1207/puro_tacos_frontend"
               >
                 GitHub
               </a>
-            </span>
+            </div>
           </div>
         </div>
       </div>
