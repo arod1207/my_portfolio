@@ -9,7 +9,7 @@ import {
 
 function Projects() {
   return (
-    <div className="my-8 mx-3 h-screen">
+    <div className="my-8 mx-3 h-screen ">
       <div className="my-2 text-center">
         <h1 className="text-2xl font-bold md:text-6xl">Projects</h1>
       </div>
@@ -30,16 +30,16 @@ function Projects() {
             </p>
           </div>
           <div className="my-4 flex justify-between md:justify-start md:gap-4">
-            <div className="h-[50px] w-[50px] rounded-full">
+            <div className="h-[50px] w-[50px]">
               <JavaScriptSVG />
             </div>
-            <div className="h-[50px] w-[50px] rounded-full">
+            <div className="h-[50px] w-[50px] ">
               <TailWindSVG />
             </div>
-            <div className="h-[50px] w-[50px] rounded-full">
+            <div className="h-[50px] w-[50px] ">
               <ReactSVG />
             </div>
-            <div className="h-[50px] w-[50px] rounded-full">
+            <div className="h-[50px] w-[50px] ">
               <ReduxSVG />
             </div>
           </div>
