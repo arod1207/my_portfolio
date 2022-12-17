@@ -7,9 +7,9 @@ import {
   TailWindSVG,
 } from "../Utils/SVGs";
 
-function Projects() {
+function Projects({ projectRef }) {
   return (
-    <div className="my-8 mx-3 h-screen ">
+    <div className="my-8 mx-3 h-screen" ref={projectRef}>
       <div className="my-2 text-center">
         <h1 className="text-2xl font-bold md:text-6xl">Projects</h1>
       </div>

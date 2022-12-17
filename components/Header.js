@@ -5,11 +5,19 @@ import { motion } from "framer-motion";
 //SVGS//
 import { HamburgerSVG, CodeBracketSVG } from "../Utils/SVGs";
 
-function Header() {
+function Header({ projectRef }) {
   const [showModal, setShowModal] = useState(false);
 
   const handleShowModal = () => {
     setShowModal(!showModal);
+  };
+
+  const handleScroll = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -24,13 +32,7 @@ function Header() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className="cursor-pointer"
-          >
-            Home
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="cursor-pointer"
+            onClick={() => handleScroll(projectRef.current)}
           >
             Projects
           </motion.li>
@@ -60,9 +62,12 @@ function Header() {
         {showModal && (
           <div className="t flex justify-center">
             <ul className="flex flex-col items-center gap-8 p-4 text-4xl text-[#EFF1F3]">
-              <li className="cursor-pointer">Home</li>
-              <li className="cursor-pointer">About</li>
-              <li className="cursor-pointer">Projects</li>
+              <li
+                className="cursor-pointer"
+                onClick={() => handleScroll(projectRef.current)}
+              >
+                Projects
+              </li>
               <li className="cursor-pointer">Contact</li>
             </ul>
           </div>
