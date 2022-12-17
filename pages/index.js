@@ -6,7 +6,7 @@ import TechStack from "../components/TechStack";
 
 export default function Home() {
   return (
-    <div>
+    <div className="mx-auto 2xl:container">
       <Header />
       <Hero />
       <Projects />

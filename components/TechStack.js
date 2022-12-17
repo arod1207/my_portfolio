@@ -5,6 +5,7 @@ import {
   JavaScriptSVG,
   HtmlSVG,
   TailWindSVG,
+  JavaScriptTest,
 } from "../Utils/SVGs";
 
 function TechStack() {
@@ -30,6 +31,9 @@ function TechStack() {
         <div className="h-[50px] w-[50px]  md:h-[150px] md:w-[150px]">
           <NodeSVG />
         </div>
+        {/* <div className="h-[50px] w-[50px]  md:h-[150px] md:w-[150px]">
+          <JavaScriptTest />
+        </div> */}
       </div>
     </div>
   );

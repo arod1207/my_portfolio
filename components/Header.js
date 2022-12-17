@@ -15,7 +15,7 @@ function Header() {
   return (
     <>
       {/* //DESKTOP// */}
-      <div className="hidden items-center justify-center bg-[#223843] md:fixed md:z-10 md:flex md:h-20 md:w-full">
+      <div className="relative hidden items-center justify-center bg-[#223843] md:z-10 md:flex md:h-20 md:w-full">
         <span className="absolute left-3 w-12 text-[#EFF1F3]">
           <CodeBracketSVG />
         </span>
