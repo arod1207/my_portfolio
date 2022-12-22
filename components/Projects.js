@@ -22,7 +22,7 @@ function Projects({ projectRef }) {
             alt=""
           />
         </div>
-        <div className="m-3">
+        <div className="m-3 md:w-full">
           <div>
             <p className="text-md md:text-xl">
               Welcome to Puro Tacos, your one-stop shop for all things taco! Our
@@ -72,7 +72,7 @@ function Projects({ projectRef }) {
             alt=""
           />
         </div>
-        <div className="m-3 w-full">
+        <div className="m-3 md:w-full">
           <div>
             <p className="text-md  md:text-xl">
               WeatherFi is your one-stop, no-nonsense site for instant weather
@@ -121,7 +121,7 @@ function Projects({ projectRef }) {
             alt=""
           />
         </div>
-        <div className="m-3 w-full">
+        <div className="m-3 md:w-full">
           <div>
             <p className="text-md  md:text-xl">
               Music player that plays 30 second clips of your favorite songs.
