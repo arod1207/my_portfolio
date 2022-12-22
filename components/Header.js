@@ -41,7 +41,7 @@ function Header({ projectRef }) {
             whileTap={{ scale: 0.9 }}
             className="cursor-pointer"
           >
-            Contact
+            <a href="mailto:arod1207@me.com">Contact</a>
           </motion.li>
         </ul>
       </div>
