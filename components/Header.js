@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 //SVGS//
-import { HamburgerSVG, CodeBracketSVG } from "../Utils/SVGs";
+import { HamburgerSVG, CodeBracketSVG, DownloadSVG } from "../Utils/SVGs";
 
 function Header({ projectRef }) {
   const [showModal, setShowModal] = useState(false);
@@ -43,6 +43,15 @@ function Header({ projectRef }) {
           >
             <a href="mailto:arod1207@me.com">Contact</a>
           </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="cursor-pointer"
+          >
+            <a href="/resume.pdf" download="Armando Rodriguez">
+              Resume
+            </a>
+          </motion.li>
         </ul>
       </div>
 
@@ -68,7 +77,14 @@ function Header({ projectRef }) {
               >
                 Projects
               </li>
-              <li className="cursor-pointer">Contact</li>
+              <li className="cursor-pointer">
+                <a href="mailto:arod1207@me.com">Contact</a>
+              </li>
+              <li className="cursor-pointer">
+                <a href="/resume.pdf" download="Armando Rodriguez">
+                  Resume
+                </a>
+              </li>
             </ul>
           </div>
         )}
