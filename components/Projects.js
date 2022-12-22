@@ -9,9 +9,10 @@ import {
 
 function Projects({ projectRef }) {
   return (
-    <div className="my-8 mx-3 h-screen" ref={projectRef}>
+    <div className="my-8 mx-3 h-full" ref={projectRef}>
       <div className="my-2 text-center">
         <h1 className="text-2xl font-bold md:text-6xl">Projects</h1>
+        {/* // PROJECT 1 // */}
       </div>
       <div className="my-4 flex w-full flex-col rounded-md border-2   border-[#D77A61] md:flex-row">
         <div className="h-[300px] w-full">
@@ -62,7 +63,8 @@ function Projects({ projectRef }) {
           </div>
         </div>
       </div>
-      <div className=" flex w-full flex-col rounded-md border-2 border-[#D77A61]  md:flex-row">
+      {/* // PROJECT 2 // */}
+      <div className=" my-4 flex w-full flex-col rounded-md border-2 border-[#D77A61]  md:flex-row">
         <div className="h-[300px] w-full">
           <img
             className="h-full rounded-t-md object-cover md:object-contain"
@@ -103,6 +105,49 @@ function Projects({ projectRef }) {
               <a
                 className="font-bold"
                 href="https://github.com/arod1207/react-weather-app"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* // PROJECT 3 // */}
+      <div className="my-4 flex w-full flex-col rounded-md border-2 border-[#D77A61]  md:flex-row">
+        <div className="h-[300px] w-full">
+          <img
+            className="h-full rounded-t-md object-cover md:object-contain"
+            src="/swiper.png"
+            alt=""
+          />
+        </div>
+        <div className="m-3 w-full">
+          <div>
+            <p className="text-md  md:text-xl">
+              Music player that plays 30 second clips of your favorite songs.
+              Swipe Away!
+            </p>
+          </div>
+          <div className="my-4 flex justify-between md:justify-start md:gap-4">
+            <div className="h-[50px] w-[50px]">
+              <JavaScriptSVG />
+            </div>
+            <div className="h-[50px] w-[50px]">
+              <ReactSVG />
+            </div>
+          </div>
+          <div className="my-4 flex flex-col gap-8">
+            <div className="flex gap-3">
+              <LinkSVG />
+              <a className="font-bold" href="https://swipe-jamz.netlify.app/">
+                Swiper Jamz
+              </a>
+            </div>
+            <div className="flex gap-3">
+              <GitHubSVG />
+              <a
+                className="font-bold"
+                href="https://github.com/arod1207/swipe_jamz"
               >
                 GitHub
               </a>
