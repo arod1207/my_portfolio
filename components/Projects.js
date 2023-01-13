@@ -155,6 +155,51 @@ function Projects({ projectRef }) {
           </div>
         </div>
       </div>
+      {/* // PROJECT 4 // */}
+      <div className="my-4 flex w-full flex-col items-center justify-center rounded-md border-2 border-[#D77A61]  md:flex-row">
+        <div className="h-[400px] w-full">
+          <img
+            className="mx-auto h-full rounded-t-md object-cover md:object-contain"
+            src="/travel.png"
+            alt=""
+          />
+        </div>
+        <div className="m-3 md:w-full">
+          <div>
+            <p className="text-md  md:text-xl">
+              Find out about hotels, restaurants, and local attractions in a
+              city near you. Scan the barcode to access the app using Expo
+              (Download the Expo app)
+            </p>
+          </div>
+          <div className="my-4 flex justify-between md:justify-start md:gap-4">
+            <div className="h-[50px] w-[50px]">
+              <JavaScriptSVG />
+            </div>
+            <div className="h-[50px] w-[50px]">
+              <ReactSVG />
+            </div>
+          </div>
+          <div className="my-4 flex flex-col gap-8">
+            <div className="flex gap-3">
+              <img
+                className="h-[200px] rounded-t-md object-cover md:object-contain"
+                src="/travelQR.png"
+                alt=""
+              />
+            </div>
+            <div className="flex gap-3">
+              <GitHubSVG />
+              <a
+                className="font-bold"
+                href="https://github.com/arod1207/CityDiscoveryApp"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
